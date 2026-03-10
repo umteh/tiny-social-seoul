@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="./src/index.css" />
     <script type="importmap">
       {
         "imports": {
@@ -21,7 +21,534 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="root">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-inner container" style="padding: 0;">
+            <div class="nav-logo">
+                <span class="nav-logo-dot"></span>
+                TINY SOCIAL
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how">How</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#events" class="nav-cta">Join Event →</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-main">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="sticker sticker--sky">Seoul</span>
+                    <span class="sticker sticker--mint" style="transform: rotate(3deg);">SF</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-title-line">TINY</span>
+                    <span class="hero-title-line">SOCIAL</span>
+                </h1>
+
+                <div class="hero-tagline">
+                    <p class="hero-tagline-ko">
+                        퇴근 후, 누군가의 <span class="highlight">흥미로운 생각</span>을 읽는 시간.<br>
+                        카페와 펍에서 열리는 작은 라이브 칼럼.
+                    </p>
+                    <p class="hero-tagline-en">A live column after work — interesting ideas, shared in cozy cafes and pubs.</p>
+                </div>
+
+                <a href="#events" class="hero-cta">
+                    다음 모임 보기
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Playful Art Composition -->
+            <div class="hero-art">
+                <!-- Color Blocks -->
+                <div class="color-block block-1"></div>
+                <div class="color-block block-2"></div>
+                <div class="color-block block-3"></div>
+                <div class="color-block block-4"></div>
+                <div class="color-block block-5"></div>
+
+                <!-- Coffee Cup - Hero Graphic -->
+                <div class="coffee-cup">
+                    <div class="coffee-steam">
+                        <span class="steam"></span>
+                        <span class="steam"></span>
+                        <span class="steam"></span>
+                        <span class="steam"></span>
+                    </div>
+                    <div class="coffee-cup-body">
+                        <div class="coffee-cup-handle"></div>
+                    </div>
+                </div>
+
+                <!-- Accent Dots -->
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+                <div class="dot dot-4"></div>
+            </div>
+        </div>
+
+        <!-- Three Pillars -->
+        <div class="hero-pillars">
+            <div class="hero-pillar">
+                <div class="hero-pillar-icon">🏠</div>
+                <div class="hero-pillar-title">제3의 공간에서</div>
+                <p class="hero-pillar-desc">집과 직장에서 잠시 벗어나, 퇴근 후 누군가의 취향이 깃든 편안한 카페와 펍에서.</p>
+            </div>
+            <div class="hero-pillar">
+                <div class="hero-pillar-icon">💭</div>
+                <div class="hero-pillar-title">나만의 생각을</div>
+                <p class="hero-pillar-desc">전문가가 제안하는 흥미로운 지식과 관점은, 세상을 바라보는 나만의 새로운 감각을 깨웁니다.</p>
+            </div>
+            <div class="hero-pillar">
+                <div class="hero-pillar-icon">🤝</div>
+                <div class="hero-pillar-title">남들과 함께</div>
+                <p class="hero-pillar-desc">화자와 참여자는 구분 없이 섞여, 하나의 주제를 중심으로 각자의 생각을 자유롭게 나눕니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-header">
+            <div class="header-decor">
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+            </div>
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-number">01</span>
+                    <span class="section-name">About</span>
+                </div>
+                <h2 class="section-title">
+                    Tiny Social이<br>뭔가요?
+                    <span class="section-title-en">A small gathering where one thought sparks many conversations</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    <span class="emphasis">Tiny Social</span>은 퇴근 시간 이후 카페와 펍에서 열리는 작은 모임입니다.
+                </p>
+                <p>
+                    한 명의 화자(전문가)가 해당 분야의 흥미로운 지식과 경험을
+                    <span class="emphasis">하나의 생각</span>으로 제안하고,
+                    참여자들도 자신만의 생각을 자유롭게 주고받는
+                    '일상의 소소한 이벤트'입니다.
+                </p>
+                <p class="muted">
+                    A small after-work gathering in cafes and pubs. One speaker shares
+                    a fascinating idea, then everyone freely exchanges their own thoughts.
+                </p>
+            </div>
+
+            <div class="about-messages">
+                <div class="message-card">
+                    <p class="message-card-quote">'Tiny Social은 클래스가 아닙니다.'</p>
+                    <p class="message-card-desc">
+                        여긴 딱딱한 강연장이 아니라 서로의 생각과 대화를 나누는 놀이터에 가깝습니다.
+                        화자가 제안한 생각을 통해 참여자들은 서로의 다양한 생각과 대화를 나누게 됩니다.
+                    </p>
+                </div>
+                <div class="message-card">
+                    <p class="message-card-quote">'생각거리로 일탈해보세요.'</p>
+                    <p class="message-card-desc">
+                        머리 아픈 현실은 잠시 접어두고, 세상을 바라보는 색다른 생각을 통해서 재충전해보세요.
+                    </p>
+                </div>
+                <div class="message-card">
+                    <p class="message-card-quote">'100가지의 정보보다는 나만의 생각.'</p>
+                    <p class="message-card-desc">
+                        정보는 세상에 차고 넘칩니다. 그것보다는 동시대를 살아가는 다른 누군가와의 대화를 통해
+                        자기 일상과 세상에 대한 감각을 넓히는 시간이 되길 바랍니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how" id="how">
+        <div class="how-header">
+            <div class="header-decor">
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+            </div>
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-number">02</span>
+                    <span class="section-name">How It Works</span>
+                </div>
+                <h2 class="section-title">
+                    이렇게 진행돼요
+                    <span class="section-title-en">Three simple steps to a refreshing evening</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="how-steps">
+            <div class="how-step">
+                <div class="how-step-number">1</div>
+                <h3 class="how-step-title">화자의 생각 제안</h3>
+                <p class="how-step-desc">다양한 전문가들이 화자가 되어 흥미로운 지식과 함께 자신만의 생각을 30분 동안 전달합니다.</p>
+            </div>
+            <div class="how-step">
+                <div class="how-step-number">2</div>
+                <h3 class="how-step-title">참여자 대화</h3>
+                <p class="how-step-desc">이후에는 화자가 전달한 생각을 바탕으로 참여자들이 서로 대화를 통해 각자 생각을 나눕니다.</p>
+            </div>
+            <div class="how-step">
+                <div class="how-step-number">3</div>
+                <h3 class="how-step-title">자유로운 소셜</h3>
+                <p class="how-step-desc">마지막에는 전문가와 참여자가 구분 없이 한데 섞여 편안하게 모입니다.</p>
+            </div>
+        </div>
+
+        <div class="how-info">
+            <div class="how-info-card">
+                <div class="how-info-icon">🎯</div>
+                <div class="how-info-title">다루는 주제</div>
+                <p class="how-info-value">사회, 문화, 기술 등 각 분야의 전문가와 함께 우리 일상과 맞닿아 있는 새로운 생각을 다룰 거예요.</p>
+            </div>
+            <div class="how-info-card">
+                <div class="how-info-icon">🌿</div>
+                <div class="how-info-title">분위기</div>
+                <p class="how-info-value">수업처럼 진지하지도, 그렇다고 수다만 떠는 친목도 아니에요. 분위기는 편안하되 주제를 중심으로 자기만의 생각을 나누면 됩니다.</p>
+            </div>
+            <div class="how-info-card">
+                <div class="how-info-icon">👋</div>
+                <div class="how-info-title">참여 방식</div>
+                <p class="how-info-value">듣기만 해도 괜찮아요. 참여자가 원할 때만 편안하게 대화에 참여하면 됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="events-header">
+            <div class="header-decor">
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+                <div class="decor-shape"></div>
+            </div>
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-number">03</span>
+                    <span class="section-name">Upcoming</span>
+                </div>
+                <h2 class="section-title">
+                    다가오는 모임
+                    <span class="section-title-en">Your next recharge session</span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Event 1: 신예슬 — 3월 13일 -->
+        <div class="event-card">
+            <div class="event-card-inner">
+                <div class="event-main">
+                    <div class="event-badge">☕ 모집 중 — NOW OPEN</div>
+
+                    <h3 class="event-title">이름 없는 소리가 음악이 될 때</h3>
+                    <p class="event-title-en">When Nameless Sounds Become Music</p>
+
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-icon">📅</div>
+                            <div class="event-detail-label">Date / 날짜</div>
+                            <div class="event-detail-value">2026년 3월 13일<br>(금요일)</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">⏰</div>
+                            <div class="event-detail-label">Time / 시간</div>
+                            <div class="event-detail-value">저녁 7:30 PM<br>(약 90분)</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">📍</div>
+                            <div class="event-detail-label">Location / 장소</div>
+                            <div class="event-detail-value">Cafe BonDN<br>서울</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">👥</div>
+                            <div class="event-detail-label">Capacity / 인원</div>
+                            <div class="event-detail-value">15-20명<br>소규모</div>
+                        </div>
+                    </div>
+
+                    <div class="event-description">
+                        <p>
+                            <span class="speaker">화자: 신예슬</span> — 음악 평론가, 소리와 듣기 경험 연구
+                        </p>
+                        <p>
+                            일상에서 무심코 넘기는 소리에 주의를 기울여본 적 있나요?
+                            음악 평론가와 함께, 이름 없는 소리가 음악이 되는 순간을 탐구하고
+                            듣는 감각을 확장해 일상의 작은 변화와 재미를 발견해봅니다.
+                        </p>
+                        <p class="note">
+                            음악 지식이 전혀 없어도 괜찮아요. 그냥 귀를 열고 와주시면 됩니다.
+                        </p>
+                    </div>
+
+                    <div class="event-cta">
+                        <a href="https://event-us.kr/tinysocial/event/121155" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            참여신청하기
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="event-sidebar">
+                    <div class="event-sidebar-title">Event Info</div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">Speaker</div>
+                        <div class="event-sidebar-value">신예슬 — 음악 평론가. 소리와 듣기 경험, 감각의 확장을 탐구합니다.</div>
+                    </div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">What You'll Get</div>
+                        <div class="event-sidebar-value">일상의 소리에 귀 기울이는 새로운 감각. 듣기 경험의 풍요로움과 재미.</div>
+                    </div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">Venue</div>
+                        <div class="event-sidebar-value"><a href="https://www.instagram.com/cafe_bondn/" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Cafe BonDN</a>, 서울</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2: 사영준 — 3월 20일 -->
+        <div class="event-card">
+            <div class="event-card-inner">
+                <div class="event-main">
+                    <div class="event-badge" style="background: var(--mint);">☕ 모집 중 — NOW OPEN</div>
+
+                    <h3 class="event-title">우리는 가상인간과 어떻게 관계를 맺게 될까?</h3>
+                    <p class="event-title-en">How Will We Relate to Virtual Humans?</p>
+
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-icon">📅</div>
+                            <div class="event-detail-label">Date / 날짜</div>
+                            <div class="event-detail-value">2026년 3월 20일<br>(금요일)</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">⏰</div>
+                            <div class="event-detail-label">Time / 시간</div>
+                            <div class="event-detail-value">저녁 7:30 PM<br>(약 90분)</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">📍</div>
+                            <div class="event-detail-label">Location / 장소</div>
+                            <div class="event-detail-value">Cafe BonDN<br>서울</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-icon">👥</div>
+                            <div class="event-detail-label">Capacity / 인원</div>
+                            <div class="event-detail-value">15-20명<br>소규모</div>
+                        </div>
+                    </div>
+
+                    <div class="event-description">
+                        <p>
+                            <span class="speaker">화자: 사영준</span> — 미디어 아트 교수, 디지털 커뮤니케이션과 인간 심리 연구
+                        </p>
+                        <p>
+                            가상인간에게 인간의 권위를 부여하는 시대, 우리는 어떤 관점에서 이들을 대하면 좋을까요?
+                            마음 지각(Mind Perception)부터 AI의 역할 변화까지 — 인간과 기술 사이의 관계를 함께 생각해봅니다.
+                        </p>
+                        <p class="note">
+                            듣기만 해도 참여한 걸로 충분합니다. 질문만 남기셔도 괜찮습니다.
+                        </p>
+                    </div>
+
+                    <div class="event-cta">
+                        <a href="https://event-us.kr/tinysocial/event/121196" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            참여신청하기
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="event-sidebar event-sidebar--mint">
+                    <div class="event-sidebar-title">Event Info</div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">Speaker</div>
+                        <div class="event-sidebar-value">사영준 — 미디어 아트 교수. 디지털 기술로 인한 인간의 반응과 심리를 연구합니다.</div>
+                    </div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">Topics</div>
+                        <div class="event-sidebar-value">가상인간의 의인화, 마음 지각, AI의 역할 (조력자 vs 경쟁자), 인간-기술 관계</div>
+                    </div>
+
+                    <div class="event-sidebar-item">
+                        <div class="event-sidebar-label">Venue</div>
+                        <div class="event-sidebar-value"><a href="https://www.instagram.com/cafe_bondn/" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Cafe BonDN</a>, 서울</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-header">
+            <div class="header-decor">
+                <div class="decor-shape" style="background: rgba(0,0,0,0.1); border-color: rgba(0,0,0,0.15);"></div>
+                <div class="decor-shape" style="background: rgba(0,0,0,0.1); border-color: rgba(0,0,0,0.15);"></div>
+                <div class="decor-shape" style="background: rgba(0,0,0,0.1); border-color: rgba(0,0,0,0.15);"></div>
+            </div>
+            <div class="container">
+                <div class="section-label">
+                    <span class="section-number">04</span>
+                    <span class="section-name">FAQ</span>
+                </div>
+                <h2 class="section-title">
+                    자주 묻는 질문
+                    <span class="section-title-en">Everything you want to know before joining</span>
+                </h2>
+            </div>
+        </div>
+
+        <ul class="faq-list">
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    '타이니 소셜'은 무엇을 하는 모임인가요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        퇴근 후 카페나 펍에서 열리는 소규모 모임이에요. 한 명의 전문가가 흥미로운 생각을 30분간 나누고, 이후 참여자들이 자유롭게 서로의 생각을 주고받는 시간입니다. 강의라기보다는 '라이브 칼럼'에 가까워요.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    혼자 참여해도 어색하지 않을까요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        전혀요! 대부분 혼자 오시고, 강제 아이스브레이커나 자기소개 같은 건 없어요. 조용히 듣기만 하셔도 되고, 대화에 참여하고 싶을 때만 자연스럽게 합류하시면 됩니다.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    참가비에 음료나 음식이 포함되어 있나요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        참가비에는 장소 이용과 모임 참여가 포함되어 있어요. 음료와 음식은 각자 취향에 맞게 주문하시면 됩니다. 카페와 펍이라 편하게 마시면서 참여하시면 돼요.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    관련 지식이 전혀 없어도 강연을 들을 수 있나요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        물론이에요! 전문 지식이 필요한 세미나가 아니라, 흥미로운 생각을 편안하게 나누는 자리예요. 오히려 다른 분야에서 오신 분의 시각이 대화를 더 풍성하게 만들어요.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    일반적인 원데이 클래스나 인문학 강의와 무엇이 다른가요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        원데이 클래스는 기술을 배우고, 인문학 강의는 지식을 전달받는 자리라면, 타이니 소셜은 '생각을 나누는' 자리에요. 화자의 이야기는 마중물일 뿐, 핵심은 참여자 각자가 자기만의 생각을 발견하고 나누는 데 있어요.
+                    </div>
+                </div>
+            </li>
+            <li class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open'); const a = this.nextElementSibling; a.style.maxHeight = a.style.maxHeight ? null : a.scrollHeight + 'px';">
+                    '소셜 시간'에는 구체적으로 무엇을 하나요?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        화자의 발제가 끝나면 자연스럽게 소그룹 대화로 이어져요. 같은 주제에 대해 각자의 경험과 생각을 나누다 보면 어느새 시간이 훌쩍 지나 있을 거예요. 마지막에는 화자와 참여자가 구분 없이 편안하게 섞이는 시간이 있어요.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-decoration">
+            <span class="footer-dot"></span>
+            <span class="footer-dot"></span>
+            <span class="footer-dot"></span>
+            <span class="footer-dot"></span>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    TINY SOCIAL
+                    <span class="footer-logo-dot"></span>
+                </div>
+                <p class="footer-tagline">
+                    퇴근 후, 생각 하나만 가져가세요.<br>
+                    Your live column after work.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <div class="footer-col-title">Connect</div>
+                    <a href="https://www.instagram.com/project.tinysocial/" target="_blank">Instagram</a>
+                    <a href="#">Email</a>
+                    <a href="#">KakaoTalk</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Navigate</div>
+                    <a href="#about">About</a>
+                    <a href="#how">How It Works</a>
+                    <a href="#events">Events</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 TINY SOCIAL. SEOUL · SAN FRANCISCO. YOUR LIVE COLUMN AFTER WORK.</p>
+        </div>
+    </footer>
+
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
